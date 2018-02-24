@@ -1,7 +1,11 @@
 @import "compass/css3";
 @import "compass/utilities";
 
-//VARS
+// Fontes
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+
+// Vars
 
 $espacamento-vertical-padrao: 40px;
 $espacamento-vertical-paragrafo: 45px;
@@ -11,6 +15,7 @@ $cor-azul: #1b527c;
 $cor-branca: white;
 $cor-preta: #333;
 $cor-azul-esverdeado: #3399cc;
+
 header{
     width: 100%;
     padding-top:12px;
@@ -30,12 +35,14 @@ header{
             margin: 0px;
             padding:0px;
             li{
-                margin: 0px 0px 0px 30px;
+                margin: 0px 0px 0px 20px;
                 padding:0px;
                 float: left;
-               
                 list-style: none;
             }
+            .text-link{
+                margin-top:7px !important;
+            }            
         }
     }
 }
@@ -46,6 +53,7 @@ header{
     h1{
         color: $cor-preta;
         text-align: center;
+        font-family: 'Roboto', sans-serif;
     }
     p{
         text-align: center;
@@ -65,8 +73,9 @@ header{
     min-height: 200px;
     h2{
         color: $cor-branca;
-        font-size: 4em;
+        font-size: 4.2em;
         margin-top: 0px;
+        font-family: 'Roboto', sans-serif;
     }
     p{
         color: $cor-branca;
@@ -103,6 +112,7 @@ header{
     
     h2{
         font-size: 3em;
+        font-family: 'Roboto', sans-serif;
     }
     p{
         margin-top: $espacamento-vertical-paragrafo;
@@ -110,3 +120,18 @@ header{
     }
 }
 
+footer{
+    background: $cor-preta;
+    padding-top: $espacamento-vertical-padrao;
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style:none;
+            float:left;
+            margin-right:15px;
+            color: $cor-branca;
+        }
+    }
+
+}
