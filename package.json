@@ -1,0 +1,23 @@
+{
+  "name": "cronapp-landing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lucazweb/cronapp-landing.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lucazweb/cronapp-landing/issues"
+  },
+  "homepage": "https://github.com/lucazweb/cronapp-landing#readme",
+  "dependencies": {
+    "angular": "^1.6.9",
+    "bootstrap": "^3.3.7"
+  }
+}
