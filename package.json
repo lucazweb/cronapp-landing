@@ -18,6 +18,7 @@
   "homepage": "https://github.com/lucazweb/cronapp-landing#readme",
   "dependencies": {
     "angular": "^1.6.9",
-    "bootstrap": "^3.3.7"
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.3.1"
   }
 }

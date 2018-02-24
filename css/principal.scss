@@ -1,21 +1,33 @@
-@import "compass/css3";
-@import "compass/utilities";
+@import "compass";
 
 // Fontes
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,500,900');
+@import url('https://fonts.googleapis.com/css?family=Mukta+Malar');
 
 // Vars
 
-$espacamento-vertical-padrao: 40px;
+$espacamento-vertical-padrao: 70px;
 $espacamento-vertical-paragrafo: 45px;
+
+// Media queries
+
+// Smartphones
+$mq-smartphones-portrait-landscape: "only screen and (min-device-width : 320px) and (max-device-width : 480px)";
+
 // Cores
 
 $cor-azul: #1b527c;
+$cor-azul-gradiente: #3bb1ff;
 $cor-branca: white;
 $cor-preta: #333;
 $cor-azul-esverdeado: #3399cc;
 $cor-azul-cronapp: #6699ff;
+
+p, span, blockquote, a, button{
+    font-family: 'Mukta Malar', sans-serif;
+}
+
 header{
     width: 100%;
     padding-top:12px;
@@ -40,6 +52,20 @@ header{
                 float: left;
                 list-style: none;
             }
+
+            .dsklinks{
+                @media #{$mq-smartphones-portrait-landscape} {
+                    display: none;
+                }                
+            }
+
+            .btn-entrar{
+                @media #{$mq-smartphones-portrait-landscape} {
+                    padding:5px 42px;
+                    margin-top: 10px;
+                }                
+            }
+
             .text-link{
                 margin-top:7px !important;
             }            
@@ -48,10 +74,12 @@ header{
 }
 
 .intro{
-    background: lighten($cor-azul, 30%);
+    //background: lighten($cor-azul, 30%);
+    @include background-image(linear-gradient($cor-branca 30% , $cor-azul-gradiente));
     min-height: 200px;
     h1{
         color: $cor-preta;
+        font-size: 3em;
         text-align: center;
         font-family: 'Roboto', sans-serif;
     }
@@ -63,6 +91,12 @@ header{
         margin: auto;
         min-height: 200px;
         background: $cor-preta;
+        //box-shadow: 2px 2px 2px $cor-preta;
+        border: 2px solid ligthen($cor-preta, 20%);
+
+        @media #{$mq-smartphones-portrait-landscape} {
+            display: none;
+        }
     }
 }
 
@@ -76,14 +110,30 @@ header{
         font-size: 4.2em;
         margin-top: 0px;
         font-family: 'Roboto', sans-serif;
+        @media #{$mq-smartphones-portrait-landscape} {
+           font-size: 2em;
+           text-align: center;
+        }
     }
     p{
         color: $cor-branca;
         text-align: left;
         padding-right: 14px;
-        font-size: 1.8em;
+        font-size: 2.8em;
         margin-top:45px;
+        line-height: 32pt;
+        @media #{$mq-smartphones-portrait-landscape} {
+            text-align: center;
+         }
+    }
 
+    .welcome{
+        h3{
+            font-family: 'Mukta Malar', sans-serif;
+            margin-top: 0px;
+            color: lighten($cor-preta, 20%);
+            text-align: center;
+        }
     }
 
     .form-lead{
@@ -110,6 +160,10 @@ header{
     background-position: 110px 60px;
     background-size: 500px;
     
+    @media #{$mq-smartphones-portrait-landscape} {
+        background-image:url('../img/tecnologias_alpha.png');
+    }
+
     h2{
         font-size: 3em;
         font-family: 'Roboto', sans-serif;
@@ -152,3 +206,11 @@ footer{
     }
 }
 
+.logo{
+    width:200px;
+    height: 60px;
+    background-image:url('../img/logo-cronapp-h.png');
+    background-repeat: no-repeat;
+    background-size: 100%;  
+    float: left;
+}
