@@ -1,0 +1,112 @@
+@import "compass/css3";
+@import "compass/utilities";
+
+//VARS
+
+$espacamento-vertical-padrao: 40px;
+$espacamento-vertical-paragrafo: 45px;
+// Cores
+
+$cor-azul: #1b527c;
+$cor-branca: white;
+$cor-preta: #333;
+$cor-azul-esverdeado: #3399cc;
+header{
+    width: 100%;
+    padding-top:12px;
+    .logo{
+        width:200px;
+        height: 60px;
+        background-image:url('../img/logo-cronapp-h.png');
+        background-repeat: no-repeat;
+        background-size: 100%;  
+        float: left;
+    }
+
+    nav{
+        width: 40%;
+        float: right;
+        ul{
+            margin: 0px;
+            padding:0px;
+            li{
+                margin: 0px 0px 0px 30px;
+                padding:0px;
+                float: left;
+               
+                list-style: none;
+            }
+        }
+    }
+}
+
+.intro{
+    background: lighten($cor-azul, 30%);
+    min-height: 200px;
+    h1{
+        color: $cor-preta;
+        text-align: center;
+    }
+    p{
+        text-align: center;
+    }
+    .col-md-10--mostrador{
+        float: none;
+        margin: auto;
+        min-height: 200px;
+        background: $cor-preta;
+    }
+}
+
+.leads{
+    background: $cor-azul;
+    padding-top: $espacamento-vertical-padrao; 
+    padding-bottom: $espacamento-vertical-padrao;
+    min-height: 200px;
+    h2{
+        color: $cor-branca;
+        font-size: 4em;
+        margin-top: 0px;
+    }
+    p{
+        color: $cor-branca;
+        text-align: left;
+        padding-right: 14px;
+        font-size: 1.8em;
+        margin-top:45px;
+
+    }
+
+    .form-lead{
+        background: $cor-branca;
+        padding:20px;
+        border-radius: 4px;
+       .btn-lead{
+           background: $cor-azul-esverdeado;
+           color: $cor-branca;
+           font-size: 1.2em;
+           transition: background-color ease 0.7s;
+           &:hover{
+                background:darken($cor-azul-esverdeado, 20%);
+           }
+       }
+    }
+}
+
+.tecnologias{
+    padding-top: $espacamento-vertical-padrao;
+    padding-bottom: $espacamento-vertical-padrao;
+    background-image:url('../img/tecnologias.png');
+    background-repeat: no-repeat;
+    background-position: 110px 60px;
+    background-size: 500px;
+    
+    h2{
+        font-size: 3em;
+    }
+    p{
+        margin-top: $espacamento-vertical-paragrafo;
+        font-size:1.2em;
+    }
+}
+

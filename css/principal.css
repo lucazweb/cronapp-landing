@@ -1,0 +1,93 @@
+header {
+  width: 100%;
+  padding-top: 12px;
+}
+header .logo {
+  width: 200px;
+  height: 60px;
+  background-image: url("../img/logo-cronapp-h.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  float: left;
+}
+header nav {
+  width: 40%;
+  float: right;
+}
+header nav ul {
+  margin: 0px;
+  padding: 0px;
+}
+header nav ul li {
+  margin: 0px 0px 0px 30px;
+  padding: 0px;
+  float: left;
+  list-style: none;
+}
+
+.intro {
+  background: #56a1da;
+  min-height: 200px;
+}
+.intro h1 {
+  color: #333;
+  text-align: center;
+}
+.intro p {
+  text-align: center;
+}
+.intro .col-md-10--mostrador {
+  float: none;
+  margin: auto;
+  min-height: 200px;
+  background: #333;
+}
+
+.leads {
+  background: #1b527c;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  min-height: 200px;
+}
+.leads h2 {
+  color: white;
+  font-size: 4em;
+  margin-top: 0px;
+}
+.leads p {
+  color: white;
+  text-align: left;
+  padding-right: 14px;
+  font-size: 1.8em;
+  margin-top: 45px;
+}
+.leads .form-lead {
+  background: white;
+  padding: 20px;
+  border-radius: 4px;
+}
+.leads .form-lead .btn-lead {
+  background: #3399cc;
+  color: white;
+  font-size: 1.2em;
+  transition: background-color ease 0.7s;
+}
+.leads .form-lead .btn-lead:hover {
+  background: #1f5c7a;
+}
+
+.tecnologias {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-image: url("../img/tecnologias.png");
+  background-repeat: no-repeat;
+  background-position: 110px 60px;
+  background-size: 500px;
+}
+.tecnologias h2 {
+  font-size: 3em;
+}
+.tecnologias p {
+  margin-top: 45px;
+  font-size: 1.2em;
+}
