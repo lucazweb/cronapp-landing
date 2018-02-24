@@ -113,3 +113,16 @@ footer ul li {
   margin-right: 15px;
   color: white;
 }
+
+.slide-comb .divider {
+  width: 10px !important;
+  background-color: #6699ff !important;
+}
+.slide-comb .divider .arrows {
+  width: 70px;
+  height: 30px;
+  background: url("../img/arrows.png") no-repeat center;
+  position: absolute;
+  left: -30px;
+  top: 200px;
+}
