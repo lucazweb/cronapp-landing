@@ -1,0 +1,93 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'https://github.com/jacted/image-comparison-slider-angular.git' ]
+2 info using npm@3.8.6
+3 info using node@v6.1.0
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData https://github.com/jacted/image-comparison-slider-angular.git
+8 silly fetchOtherPackageData https://github.com/jacted/image-comparison-slider-angular.git
+9 silly cache add args [ 'https://github.com/jacted/image-comparison-slider-angular.git',
+9 silly cache add   null ]
+10 verbose cache add spec https://github.com/jacted/image-comparison-slider-angular.git
+11 silly cache add parsed spec Result {
+11 silly cache add   raw: 'https://github.com/jacted/image-comparison-slider-angular.git',
+11 silly cache add   scope: null,
+11 silly cache add   name: null,
+11 silly cache add   rawSpec: 'https://github.com/jacted/image-comparison-slider-angular.git',
+11 silly cache add   spec: 'git+https://github.com/jacted/image-comparison-slider-angular.git',
+11 silly cache add   type: 'hosted',
+11 silly cache add   hosted:
+11 silly cache add    { type: 'github',
+11 silly cache add      ssh: 'git@github.com:jacted/image-comparison-slider-angular.git',
+11 silly cache add      sshUrl: 'git+ssh://git@github.com/jacted/image-comparison-slider-angular.git',
+11 silly cache add      httpsUrl: 'git+https://github.com/jacted/image-comparison-slider-angular.git',
+11 silly cache add      gitUrl: 'git://github.com/jacted/image-comparison-slider-angular.git',
+11 silly cache add      shortcut: 'github:jacted/image-comparison-slider-angular',
+11 silly cache add      directUrl: 'https://raw.githubusercontent.com/jacted/image-comparison-slider-angular/master/package.json' } }
+12 verbose addRemoteGit caching https://github.com/jacted/image-comparison-slider-angular.git
+13 verbose addRemoteGit git+https://github.com/jacted/image-comparison-slider-angular.git is a repository hosted by github
+14 silly tryClone cloning git+https://github.com/jacted/image-comparison-slider-angular.git via git+https://github.com/jacted/image-comparison-slider-angular.git
+15 verbose tryClone git-https-github-com-jacted-image-comparison-slider-angular-git-06405fb0 not in flight; caching
+16 verbose correctMkdir /Users/Lucas/.npm/_git-remotes correctMkdir not in flight; initializing
+17 info git [ 'clone',
+17 info git   '--template=/Users/Lucas/.npm/_git-remotes/_templates',
+17 info git   '--mirror',
+17 info git   'https://github.com/jacted/image-comparison-slider-angular.git',
+17 info git   '/Users/Lucas/.npm/_git-remotes/git-https-github-com-jacted-image-comparison-slider-angular-git-06405fb0' ]
+18 verbose mirrorRemote git+https://github.com/jacted/image-comparison-slider-angular.git git clone https://github.com/jacted/image-comparison-slider-angular.git
+19 verbose correctMkdir /Users/Lucas/.npm/_git-remotes correctMkdir not in flight; initializing
+20 verbose setPermissions git+https://github.com/jacted/image-comparison-slider-angular.git set permissions on /Users/Lucas/.npm/_git-remotes/git-https-github-com-jacted-image-comparison-slider-angular-git-06405fb0
+21 verbose resolveHead git+https://github.com/jacted/image-comparison-slider-angular.git original treeish: master
+22 info git [ 'rev-list', '-n1', 'master' ]
+23 silly resolveHead git+https://github.com/jacted/image-comparison-slider-angular.git resolved treeish: f86d8e46695ca58120f6a67489bfcb2c343903d5
+24 verbose resolveHead git+https://github.com/jacted/image-comparison-slider-angular.git resolved Git URL: git+https://github.com/jacted/image-comparison-slider-angular.git#f86d8e46695ca58120f6a67489bfcb2c343903d5
+25 silly resolveHead Git working directory: /var/folders/2l/y40tk1yd7yqb169wk935qlqh0000gn/T/npm-53222-449e6cc6/git-cache-ccad533b/f86d8e46695ca58120f6a67489bfcb2c343903d5
+26 info git [ 'clone',
+26 info git   '/Users/Lucas/.npm/_git-remotes/git-https-github-com-jacted-image-comparison-slider-angular-git-06405fb0',
+26 info git   '/var/folders/2l/y40tk1yd7yqb169wk935qlqh0000gn/T/npm-53222-449e6cc6/git-cache-ccad533b/f86d8e46695ca58120f6a67489bfcb2c343903d5' ]
+27 verbose cloneResolved git+https://github.com/jacted/image-comparison-slider-angular.git clone Cloning into '/var/folders/2l/y40tk1yd7yqb169wk935qlqh0000gn/T/npm-53222-449e6cc6/git-cache-ccad533b/f86d8e46695ca58120f6a67489bfcb2c343903d5'...
+27 verbose cloneResolved done.
+28 info git [ 'checkout', 'f86d8e46695ca58120f6a67489bfcb2c343903d5' ]
+29 verbose checkoutTreeish git+https://github.com/jacted/image-comparison-slider-angular.git checkout Note: checking out 'f86d8e46695ca58120f6a67489bfcb2c343903d5'.
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish You are in 'detached HEAD' state. You can look around, make experimental
+29 verbose checkoutTreeish changes and commit them, and you can discard any commits you make in this
+29 verbose checkoutTreeish state without impacting any branches by performing another checkout.
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish If you want to create a new branch to retain commits you create, you may
+29 verbose checkoutTreeish do so (now or later) by using -b with the checkout command again. Example:
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish   git checkout -b <new-branch-name>
+29 verbose checkoutTreeish
+29 verbose checkoutTreeish HEAD is now at f86d8e4... Merge branch 'gh-pages'
+30 info git [ 'submodule', '-q', 'update', '--init', '--recursive' ]
+31 verbose updateSubmodules git+https://github.com/jacted/image-comparison-slider-angular.git submodule update
+32 error addLocal Could not install /var/folders/2l/y40tk1yd7yqb169wk935qlqh0000gn/T/npm-53222-449e6cc6/git-cache-ccad533b/f86d8e46695ca58120f6a67489bfcb2c343903d5
+33 silly fetchPackageMetaData Error: EISDIR: illegal operation on a directory, read
+33 silly fetchPackageMetaData     at Error (native)
+33 silly fetchPackageMetaData  error for https://github.com/jacted/image-comparison-slider-angular.git { Error: EISDIR: illegal operation on a directory, read
+33 silly fetchPackageMetaData     at Error (native) errno: -21, code: 'EISDIR', syscall: 'read' }
+34 silly rollbackFailedOptional Starting
+35 silly rollbackFailedOptional Finishing
+36 silly runTopLevelLifecycles Starting
+37 silly runTopLevelLifecycles Finishing
+38 silly install printInstalled
+39 verbose stack Error: EISDIR: illegal operation on a directory, read
+39 verbose stack     at Error (native)
+40 verbose cwd /Applications/MAMP/htdocs/cronapp
+41 error Darwin 14.5.0
+42 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "https://github.com/jacted/image-comparison-slider-angular.git"
+43 error node v6.1.0
+44 error npm  v3.8.6
+45 error code EISDIR
+46 error errno -21
+47 error syscall read
+48 error eisdir EISDIR: illegal operation on a directory, read
+49 error eisdir This is most likely not a problem with npm itself
+49 error eisdir and is related to npm not being able to find a package.json in
+49 error eisdir a package you are trying to install.
+50 verbose exit [ -21, true ]
